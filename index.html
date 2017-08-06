@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="applicable-device" content="mobile" />
+	<!-- 移动端 浏览器中页面将以原始大小显示，不允许缩放 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+
+	<!-- iphone会把一串数字识别为电话号码，点击的时候会提示是否呼叫，屏蔽这功能则把telephone设置为no -->
+	<meta content="telephone=no" name="format-detection"/> 
+	<!-- iphone的私有标签，默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明） -->
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<!-- iphone设备的是有标签 允许全屏模式浏览，隐藏浏览器导航栏 -->
+	<meta content="yes" name="apple-mobile-web-app-capable"/>
+	<!-- 全屏显示 
+	<meta content="yes" name="apple-touch-fullscreen"/>
+	UC强制全屏 
+	<meta name="full-screen" content="yes">
+    QQ强制全屏 
+	<meta name="x5-fullscreen" content="true">
+	屏蔽百度转码 -->
+	<meta http-equiv="Cache-Control" content="no-transform" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<title>Document</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<script src="js/common.js"></script>
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/swiper-3.4.2.jquery.min.js"></script>
+	<script src="js/swiper.animate1.0.2.min.js"></script>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<!-- 头 -->
+	<div class="top_fixed">
+		 <ul>
+			<li>
+	        <span id="city">郑州</span>
+	        <img id="changecity" src="images/top/pulldown.png" alt="">
+			</li>
+			<li>
+            <input id="search-input" type="text" placeholder="请输入商品、品类、或商圈...">
+			</li>
+			<li>
+			<img id="scan"src="images/top/scan.png" alt="">
+			</li>
+		</ul>
+		<div id="citys">
+			<ol>
+				<li class="select-city">郑州</li>
+				<li class="select-city">开封</li>
+				<li class="select-city">洛阳</li>
+				<li class="select-city">安阳</li>
+				<li class="select-city">濮阳</li>
+				<li class="select-city">焦作</li>
+				<li class="select-city">商丘</li>
+				<li class="select-city">周口</li>
+			</ol>
+		</div>
+	</div>
+	<div class="blank"></div>
+	<div id="search">
+	</div>
+	<div class="line1"></div>
+	<!-- 轮播图 -->
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"></div>
+			<div class="swiper-slide"></div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+	<!-- banner -->
+	<div class="banner-flex">
+		<ul>
+			<li>
+			<img src="images/banner/banner1.png" alt="">
+			<div align="center">美食</div>
+			</li>
+			<li>
+			<img id="banner2" src="images/banner/banner2.png" alt="">
+			<div align="center">酒店</div>
+			</li>
+			<li>
+			<img src="images/banner/banner3.png" alt="">
+			<div align="center">景点</div>
+			</li>
+			<li>
+			<img src="images/banner/banner4.png" alt="">
+			<div align="center">休闲娱乐</div>
+			</li>
+		</ul>
+	</div>
+	<div class="banner-flex">
+         <ul>
+			<li>
+			<img src="images/banner/banner5.png" alt="">
+			<div align="center">闪惠团购</div>
+			</li>
+			<li>
+			<img src="images/banner/banner6.png" alt="">
+			<div align="center">电影</div>
+			</li>
+			<li>
+			<img src="images/banner/banner7.png" alt="">
+			<div align="center">度假套餐</div>
+			</li>
+			<li>
+			<img src="images/banner/banner8.png" alt="">
+			<div align="center">购物</div>
+			</li>
+		</ul>
+	</div>
+	<div class="line2"></div>
+	<!-- 免费体验区 -->
+	<div class="title-flex">
+	<ul>
+		<li>
+		 <span></span>
+		 <span>免费体验区</span></li>
+		<li id="count-down">距离开始:|02:25:59</li>
+		<li>查看更多></li>
+	</ul>
+	</div>
+	<div class="free-zone-flex">
+		<ul>
+			<li>
+			<img src="images/free_zone/free_zone1.png" alt="">
+			<div align="center">冰淇淋</div>
+			</li>
+			<li>
+			<img src="images/free_zone/free_zone2.png" alt="">
+			<div align="center">果蔬饮料</div>
+			</li>
+			<li>
+			<img src="images/free_zone/free_zone3.png" alt="">
+			<div align="center">水果拼盘</div>
+			</li>
+			<li>
+			<img src="images/free_zone/free_zone4.png" alt="">
+			<div align="center">美味披萨</div>
+			</li>
+		</ul>
+	</div>
+	<div class="free-zone-flex">
+         <ul>
+			<li>
+			<img src="images/free_zone/free_zone5.png" alt="">
+			<div align="center">洗车擦车</div>
+			</li>
+			<li>
+			<img src="images/free_zone/free_zone6.png" alt="">
+			<div align="center">摄影写真</div>
+			</li>
+			<li>
+			<img src="images/free_zone/free_zone7.png" alt="">
+			<div align="center">台球休闲</div>
+			</li>
+			<li>
+			<img src="images/free_zone/free_zone8.png" alt="">
+			<div align="center">足浴养生</div>
+			</li>
+		</ul>
+	</div>
+	<div class="line2"></div>
+	<!-- 玖邦尼创富 -->
+	<div class="title-flex">
+	<ul>
+		<li>
+		 <span></span>
+		 <span>玖邦尼创富</span></li>
+		<li>玖邦币购物,超值有划算!</li>
+		<li>查看全部></li>
+	</ul>
+	</div>
+	<div class="wealthy-flex">
+		<ul>
+			<li>
+			<img src="images/wealthy/wealthy1.png" alt="">
+			</li>
+			<li>
+			<img src="images/wealthy/wealthy2.png" alt="">
+			</li>
+			<li>
+			<img src="images/wealthy/wealthy3.png" alt="">
+			</li>
+			<li>
+			<img src="images/wealthy/wealthy4.png" alt="">
+			</li>
+		</ul>
+	</div>
+	<div class="wealthy-flex">
+         <ul>
+			<li>
+			<img src="images/wealthy/wealthy5.png" alt="">
+			</li>
+			<li>
+			<img src="images/wealthy/wealthy6.png" alt="">
+			</li>
+			<li>
+			<img src="images/wealthy/wealthy7.png" alt="">
+			</li>
+			<li>
+			<img src="images/wealthy/wealthy8.png" alt="">
+			</li>
+		</ul>
+	</div>
+	<div class="line"></div>
+	<!-- 猜你喜欢 -->
+	<div class="title-flex">
+	<ul>
+		<li>
+		 <span></span>
+		 <span>猜你喜欢</span></li>
+		<li> 查看所有></li>
+	</ul>
+	</div>
+	<div class="line3"></div>
+	<div class="like-flex">
+		<ul>
+			<li>
+			<img src="images/like/like1.png" alt="">
+			</li>
+			<li>
+			 <ol>
+			 	<li>
+                 	<ol>
+			 		<li>香贝贝蛋糕/蛋挞</li>
+			 		<li>&lt;1km</li>
+			 	    </ol>
+			 	</li>
+			 	<li>[高皇寨花都莲郡小区门向西30米]</li>
+			 	<li>
+			 		<ol>
+			 		<li>￥&nbsp;49.00元</li>
+			 		<li>月销量:1532份</li>
+			 	    </ol>
+			 	</li>
+			 </ol>
+
+			</li>
+		</ul>
+	</div>
+	<div class="line3"></div>
+	<div class="like-flex">
+         <ul>
+			<li>
+			<img src="images/like/like2.png" alt="">
+			</li>
+			<li>
+			<ol>
+			 	<li>
+			 	<ol>
+			 		<li>天天见面麻辣香锅</li>
+			 		<li>&lt;1km</li>
+			 	</ol>
+			 	</li>
+
+			 	<li>[经三路与趁旭路交叉口西100米麻辣香锅]</li>
+			 	<li>
+                 <ol>
+			 		<li>￥&nbsp;49.00元</li>
+			 		<li>月销量:1202份</li>
+			 	</ol>
+
+			 	</li>
+			 </ol>
+			</li>
+		</ul>
+	</div>
+	<div class="line3"></div>
+	<div class="like-flex">
+         <ul>
+			<li>
+			<img src="images/like/like3.png" alt="">
+			</li>
+			<li>
+			<ol>
+			 	<li>
+                 	<ol>
+			 		<li>重庆小面</li>
+			 		<li>&lt;2km</li>
+			     	</ol>
+			 	</li>
+			 	<li>[郑州市金水区庙李南二街345号]</li>
+			 	<li>
+			 	     <ol>
+			 		<li>￥&nbsp;6.00元</li>
+			 		<li>月销量:1352份</li>
+			     	</ol>
+			     </li>
+			 </ol>
+			</li>
+		</ul>
+	</div><div class="line3"></div>
+	<div class="like-flex more1">
+         <ul>
+			<li>
+			<img src="images/like/like3.png" alt="">
+			</li>
+			<li>
+			<ol>
+			 	<li>
+                 	<ol>
+			 		<li>重庆小面</li>
+			 		<li>&lt;2km</li>
+			     	</ol>
+			 	</li>
+			 	<li>[郑州市金水区庙李南二街345号]</li>
+			 	<li>
+			 	     <ol>
+			 		<li>￥&nbsp;6.00元</li>
+			 		<li>月销量:1352份</li>
+			     	</ol>
+			     </li>
+
+			 </ol>
+			</li>
+		</ul>
+	</div><div class="line3 more"></div>
+	<div class="like-flex more2">
+         <ul>
+			<li>
+			<img src="images/like/like3.png" alt="">
+			</li>
+			<li>
+			<ol>
+			 	<li>
+                 	<ol>
+			 		<li>重庆小面</li>
+			 		<li>&lt;2km</li>
+			     	</ol>
+			 	</li>
+			 	<li>[郑州市金水区庙李南二街345号]</li>
+			 	<li>
+			 	     <ol>
+			 		<li>￥&nbsp;6.00元</li>
+			 		<li>月销量:1352份</li>
+			     	</ol>
+			     </li>
+			 </ol>
+			</li>
+		</ul>
+	</div>
+	<div class="line3 more"></div>
+	<div class="scan-all">
+		查看全部团购
+	</div>
+	<!-- 尾 -->
+	<div class="blank"></div>
+	<div class="bottom_fixed">
+		 <ul>
+			<li>
+			<img src="images/bottom/bottom1.png" alt="">
+			<div>商城首页</div>
+			</li>
+			<li>
+			<img src="images/bottom/bottom2.png" alt="">
+			<div>商家合作</div>
+			</li>
+			<li>
+			<img src="images/bottom/bottom3.png" alt="">
+			<div>订单合作</div>
+			</li>
+			<li>
+			<img src="images/bottom/bottom4.png" alt="">
+			<div>会员中心</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+body,html{
+    height:100%;
+    font-size:0.22rem;
+}
+.top_fixed{
+     	position:fixed;
+        width:100%;
+        height:1.2rem;
+        background-color:rgb(2,161,252);
+        z-index:99;
+     }
+/* 头部的设置  */
+#city{
+        position:relative;
+        top:0.03rem;
+}
+#citys{  
+        /* margin-left:0.25rem; */
+        margin-top:-0.3rem;
+        display:none;
+}
+#changecity{
+        width:0.25rem;
+        position:relative;
+        top:0.09rem;
+}
+#scan{
+        width:0.6rem;
+        position:relative;
+        top:0.02rem;
+}
+#search-input{
+        border:1px solid white;
+        border-radius:0.2rem;
+        width:3.0rem;
+        height:0.7rem;
+        outline:none;
+        background-color:rgb(2,161,252);
+        padding-left:0.9rem;
+}
+input::-webkit-input-placeholder{
+        color:white;
+       }
+       /* search按钮 */
+#search{
+        height:0.6rem;
+        width:0.9rem;
+        background:url("../images/top/search.png") no-repeat;
+        position:fixed; 
+        z-index:99;
+        left:1.5rem;
+        top:0.4rem;
+}
+.bottom_fixed{
+        position:fixed;
+        bottom:0px;
+        width:100%;
+        height:1.0rem;
+        background-color:rgb(2,161,252);
+        z-index:99;
+     }
+.blank{
+        height:1.0rem;
+     }
+.swiper-container{
+        height:3.0rem;
+}
+.swiper-container .swiper-slide:nth-child(1){
+        background:url("../images/banner/banner01.png") no-repeat;
+        background-size:cover;
+}
+.swiper-container .swiper-slide:nth-child(2){
+        background:url("../images/banner/banner02.png") no-repeat;
+        background-size:cover;
+}
+.banner-flex ul,.free-zone-flex ul,.wealthy-flex ul,.title-flex ul{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+}
+.like-flex ul{
+        display:flex;
+        align-items:center;
+}
+.like-flex ul li{
+        width:4.1rem;
+}
+.like-flex ul li ol li ol{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+}
+.like-flex ul li ol li ol li:nth-child(2){
+       text-align:right;
+}
+.banner-flex ul{
+        height:1.6rem;
+}
+.free-zone-flex ul,.wealthy-flex ul{
+        height:1.5rem;
+}
+.banner-flex ul li img{
+        width:1rem;
+}
+#banner2{
+        width:1.2022rem;
+}
+.free-zone-flex ul li img,.wealthy-flex ul li img{
+        width:1.4rem;
+}
+.like-flex ul li img{
+        width:1.8rem;
+}
+
+/* 标题和内容距离左右的margin */
+.banner-flex,.free-zone-flex,.wealthy-flex,.like-flex,.title-flex{
+        margin:0.2rem;
+}
+/* 线的设置 */
+div.line1{
+         height:0.04rem;
+         background-color:black;
+}
+div.line2{
+         height:0.06rem;
+         background-color:lightgray;
+         margin-bottom: 0.1rem;
+}
+div.line3{
+         height:0.02rem;
+         background-color:lightgray;
+         margin-bottom: 0.1rem;
+         margin-left: 0.1rem;
+         background-color:gray;
+}
+/* 标题的设置 */
+/* 浏览全部 */
+div.scan-all{
+         height:0.8rem;
+         line-height:0.8rem;
+         text-align:center;
+}
+/* 头 flex */
+/* 底 flex */
+.top_fixed ul,.bottom_fixed ul{
+        height:100%;
+        display:flex;
+        align-items:center;/* li居中 */
+        justify-content:space-around;
+        color:white;
+}
+.top_fixed ul{
+        justify-content:space-between;
+        margin:0 0.25rem;
+}
+.bottom_fixed ul li img{
+        width:0.4rem;
+}
+/* 让li中的image居中 */
+.bottom_fixed ul li{
+        text-align:center;
+}
+li{
+        margin-top:0.08rem;
+}
+.more,.more1,.more2{
+        display:none;
+}
+/* 给citys设置背景色 */
+#citys{
+    background-color:rgb(2,161,252);
+    width:1.4rem;
+}
+#citys li{
+    color:white;
+    text-align:center;
+}
